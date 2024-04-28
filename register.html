@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="background">
+  <div class="container">
+    <h2>Registration</h2>
+    <form class="form" id="registration-form" action="#" method="POST">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="input-group">
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number" required>
+        </div>
+        <div class="input-group">
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div class="login-message">
+      Already have an account? <a href="LoginPage.html">Login here</a>.
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        validateForm();
+    });
+});
+
+function validateForm() {
+    var name = document.getElementById('name').value.trim();
+    var surname = document.getElementById('surname').value.trim();
+    var studentNumber = document.getElementById('student-number').value.trim();
+    var idNumber = document.getElementById('id-number').value.trim();
+
+    if (name === '' || surname === '' || studentNumber === '' || idNumber === '') {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    if (studentNumber.length !== 8) {
+        alert('Student number must be 8 digits long.');
+        return;
+    }
+
+    if (idNumber.length !== 13) {
+        alert('ID number must be 13 digits long.');
+        return;
+    }
+
+    // If all validations pass, you can submit the form or perform further actions
+    alert('Registration successful!');
+}
+</script>
+
+</body>
+</html>

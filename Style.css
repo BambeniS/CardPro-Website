@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('CPUT.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(37, 29, 29, 0); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 200px; /* Set width for the logo */
+    margin-bottom: 20px; /* Add some space between the logo and the login form */
+}
+
+h2 {
+    color: white; /* Change color to white */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: white; /* Change color to white */
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.input-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button-group button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.registration-message {
+    margin-top: 20px;
+    color: white; /* Change color to white */
+}
+
+.registration-message a {
+    color: #043d7a;
+    text-decoration: none;
+}
+
+.registration-message a:hover {
+    text-decoration: underline;
+}

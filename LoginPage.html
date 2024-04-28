@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="background">
+  <div class="container">
+    <img src="CardPro Logo 2.jpg" alt="Cardpro" class="logo"> <!-- Added the cardpro image -->
+    <h2>Login</h2>
+    <form class="form" id="login-form" action="#" method="POST">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="input-group">
+            <label for="student-number">Student Number:</label>
+            <input type="text" id="student-number" name="student-number" pattern="[0-9]{8}" title="Please enter a valid 8-digit student number" required>
+        </div>
+        <div class="input-group">
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" pattern="[0-9]{13}" title="Please enter a valid 13-digit ID number" required>
+        </div>
+        <div class="input-group">
+            <label for="campus">Campus:</label>
+            <select id="campus" name="campus" required>
+                <option value="">Select Campus</option>
+                <option value="Bellville">Bellville</option>
+                <option value="District6">District 6</option>
+            </select>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <div class="registration-message">
+      If you are not a member, <a href="register.html">register here</a>.
+    </div>
+  </div>
+</div>
+</body>
+</html>
